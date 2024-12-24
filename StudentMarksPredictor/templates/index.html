@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Predictor App</title>
+    <style>
+        .all {
+            width: 60%;
+            display: inline-flex;
+            height: 50vh;
+            padding: 20px;
+            margin: 12% 16%;
+            box-shadow: rgba(26, 26, 211, 0.2) 0px 1px 0px, rgba(17, 17, 26, 0.2) 0px 0px 8px;
+            border-radius: 5px;
+            border: 1px solid rgba(70, 27, 223, 0.377);
+        }
+
+        .user-1 {
+            width: 50%;
+            height: 100%;
+        }
+
+        .user-2 {
+            width: 75%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            background-image: url('https://www.chawtechsolutions.com/wp-content/uploads/2019/03/developer-dribbble.gif');
+        }
+
+        .user-all {
+            width: 100%;
+            display: grid;
+            place-items: center;
+            height: 20vh;
+        }
+
+        .user-input {
+            width: 100%;
+            height: 13vh;
+        }
+
+        .user-btn {
+            width: 100%;
+            height: 8vh;
+
+        }
+
+        .user-result {
+            width: 100%;
+            height: 8vh;
+        }
+
+        h2 {
+            margin: 12% 5% 0% 0%;
+            padding: 1%;
+            text-align: center;
+            color: rgba(70, 27, 223, 0.377);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            word-spacing: 5px;
+            text-transform: uppercase;
+            font-size: 20px;
+            text-shadow: 2px 1px 6px rgba(15, 43, 225, 0.226);
+        }
+
+        input {
+            padding: 3%;
+            transition: 1s;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border: 1px solid rgba(70, 27, 223, 0.377);
+            border-radius: 3px;
+        }
+
+        #inp {
+            width: 70%;
+            margin: 8% 10%;
+            padding: 3%;
+            letter-spacing: 2px;
+            word-spacing: 3px;
+        }
+
+        #btn {
+            padding: 3%;
+            width: 76%;
+            color: #777575ad;
+            text-align: center;
+            border: 1px solid rgba(70, 27, 223, 0.377);
+            background-color: transparent;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            font-weight: bolder;
+            letter-spacing: 5px;
+            margin: 0% 10%;
+        }
+
+        .user-result {
+            text-align: center;
+            text-transform: capitalize;
+            font-family: monospace;
+            font-weight: bolder;
+            color: #777575da;
+
+            font-size: 15px;
+            letter-spacing: 2px;
+        }
+
+        #inp:hover {
+
+            border: 1px solid rgba(95, 64, 209, 0.548);
+
+        }
+
+        h2::first-letter {
+            color: rgba(185, 16, 16, 0.425);
+            font-size: 50px;
+        }
+
+        #btn:hover {
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            background-color: rgb(255, 249, 249);
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        }
+
+        #machine {
+            margin-left: 10%;
+            font-weight: lighter;
+            text-shadow: 2px 1px 6px rgba(15, 43, 225, 0.158);
+
+            letter-spacing: 1px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgba(70, 27, 223, 0.377);
+            margin-bottom: 0%;
+        }
+
+        #machine::first-letter {
+            color: rgba(185, 16, 16, 0.425);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post">
+
+        <div class="all">
+            <div class="user-1">
+                <h2>Marks Prediction App </h2>
+                <p id="machine">Machine Learning</p>
+                <div class="user-all">
+                    <div class="user-input">
+                        <input type="number" id="inp" placeholder="Enter Hours" name="hours">
+                    </div>
+                    <div class="user-btn">
+                        <input type="submit" value="Predict" id="btn" name="predict">
+                    </div>
+                    <div class="user-result">
+                        <h3>Marks : {{result}}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="user-2">
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
